@@ -1,38 +1,343 @@
-.App {
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&display=swap');
+
+.navbar{
+  font-family: 'Poppins', sans-serif;
+  margin: 10px;
+  background-color: #fffefe7a;
+  display: flex;
+  justify-content: space-around;
+}
+.search{
+  display: flex;
+  align-items: center;
+  border-radius: 24px;
+}
+
+.icon{
+  position: relative;
+  left: 35px;
+  color: #7A7A7A;
+
+}
+
+.search>input{
+  background-color:#F2F2F2;
+  border: none;
+  padding: 10px;
+  width: 360px;
+  border-radius: 24px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.account{
   display: flex;
-  flex-direction: column;
   align-items: center;
+}
+
+.account>h4{
+font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+}
+.account>h4>span{
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  color: blue !important;
+  cursor: pointer;
+  }
+
+  .banner{
+    width: 100%;
+  }
+  .banner>img{
+    width: 100%;
+    filter: brightness(0.5);
+  
+  }
+  .bgimg{
+    position: relative;
+    z-index: -1;
+   
+    width: 100%;
+
+  }
+
+  .post_img{
+    
+    width: 100%;
+    height: auto;
+  }
+  .banner_title{
+    margin-left: 200px;
+    margin-top: -160px;
+  }
+  .banner_title>h4{
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 47px;
+  }
+  .banner_title>p{
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .body_Section{
+    margin-top: 100px;
+    display: flex;
+    margin-left: 200px;
+    margin-right: 200px;
+    gap:50px;
+  }
+
+  .post_Section{
+    flex:0.6;
+  }
+  .post_bar{
+    display: flex;
+    align-items: start;
+    gap: 50px;
+  }
+  .navs{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #8A8A8A;
+  }
+  .post_card_item{
+    border: 1px solid rgb(221, 217, 217);
+    margin-bottom: 10px;
+    
+  }
+  .tag{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: rgb(119, 119, 119);
+    margin-left: 10px;
+  }
+  
+  .post_title>h4{
+  margin-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  }
+  .post_title>h6{
+    margin-left: 10px;
+    color: #6c6b6b;
+  }
+
+  .avatar_info{
+    display: flex;
+    margin-left:10px;
+    padding-top: 10px;
+  }
+  .avatar_info>h5{
+    display: flex;
+    align-items: center;
+   margin-left: 5px;
+   
+  }
+  .rightbar{
+    flex:0.4;
+  }
+
+  /* modal */
+  .container{
+    display: flex;
+  }
+  .titles>h4{
+    font-style: normal;
+    font-size: large;
+    margin-top:20px;
+    margin-bottom: 20px;
+
+  }
+  .col1{
+    flex:0.5;
+  }
+  .col2{
+    flex: 0.5;
+  }
+ 
+  
+  
+  .forminput{
+    border: 1px solid  #bcbcbe ;
+    background-color: #F7F8FA;
+    padding: 10px;
+    color: #232121;
+    width: 100%;
+
+  }
+  .create_account{
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding:10px;
+    border-radius:14px;
+    background-color: #2F6CE5;
+    color:white;
+    width: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .create_account_f{
+    display: block;
+    margin: 0 auto;
+    width: 320px;
+    padding:10px;
+    background-color: #FFFFFF;
+    border: 0.6px solid #D9D9DB !important;
+    border-radius: 2px;
+    display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  text-align: center;
+  }
+  .create_account_g{
+    display: block;
+    margin: 0 auto;
+    width: 320px;
+    padding:10px;
+    background-color: #ffffff;
+    border: 1px solid #b5b5b5 !important;
+    border-radius: 2px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  }
+
+ 
+  .form>button{
+    border: none;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .col2>p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
+    margin-bottom: 20px;
+
+  }
+  .button_bar{
+    display: flex;
+     gap:10px;
+  }
+
+  .writeapost{
+    border:none;
+    padding: 5px;
+    font-weight: bold;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .join_group{
+    border: none;
+    background-color: #2F6CE5;
+    color: white;
+    font-weight: bold;
+  }
+
+ .joingroupmobile{
+  display: none;
+  position: static;
+  margin-top: -70px;
+  float: right;
+  margin-right: 20px;
+  background-color: transparent;
   color: white;
-}
+  border: 1px solid white;
+  border-radius: 4px;
 
-.App-link {
-  color: #61dafb;
-}
+ }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+
+  @media (max-width: 1000px) {
+    /* CSS code inside the media query applies to devices with a maximum width of 768 pixels */
+    /* Add your styles for smaller screens here */
+    .navbar{
+      display: none;
+    }
+    .rightbar{
+      display: none;
+      flex: 0;
+    }
+    .post_Section{
+      flex: 1;
+    }
+
+    .body_Section{
+      margin-top: 100px;
+      display: flex;
+      margin-left: 20px;
+      margin-right: 20px;
+      gap:50px;
+    }
+  
+    .banner_title{
+      margin-top: -160px;
+      margin-left: 40px;
+       
+    }
+     /* .banner_title>h4{
+      color: #FFFFFF;
+      font-family: 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 47px;
+    } */
+
+    .banner_title>p{
+      color: #FFFFFF;
+      font-family: 'Poppins', sans-serif;
+
+    } 
   }
-  to {
-    transform: rotate(360deg);
+
+  @media (max-width: 700px){
+
+    .joingroupmobile{
+      display: block;
+    }
+    .post_bar{
+      display: none;
+    }
+    .banner_title{
+      margin-top: -100px;
+      margin-left: 40px;
+    }
+     .banner_title>h4{
+      color: #FFFFFF;
+      font-family: 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 47px;
+    
+    }
+
+    .banner_title>p{
+      color: #FFFFFF;
+      font-family: 'Poppins', sans-serif;
+      font-size: 10px;
+    }
+
   }
-}
