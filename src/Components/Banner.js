@@ -10,7 +10,6 @@ function Banner() {
       <h4>Computer Engineering</h4>
       <p>142,423432,Computer Enginnering follow this</p>
       </div>
-     
       </div>
       <button className='joingroupmobile'>Join Group</button>
     </div>

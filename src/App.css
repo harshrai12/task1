@@ -102,7 +102,7 @@ font-size: 12px;
   }
   .post_bar{
     display: flex;
-    align-items: start;
+    flex: start;
     gap: 50px;
   }
   .navs{
